@@ -24,9 +24,9 @@ const User = mongoose.model('User', {
     age: Number,
     batch: String,
     payment: Object
-  })
+  });
   
-  app.use(bodyParser.json())
+  app.use(bodyParser.json());
   
   // Handle POST requests to the /users endpoint
   router.post('/submit', async (req, res) => {
